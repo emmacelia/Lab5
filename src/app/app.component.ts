@@ -6,5 +6,26 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'databinding-app';
+  count:number = 0;
+  hidelabel:boolean=true;
+  OnClick(){ 
+this.count++;
+
+
+  }
+
+  onImageclick(){
+
+    if(this.hidelabel){
+
+      this.hidelabel = false;
+    }else{
+
+      this.hidelabel = true;
+    }
+  
+
+  }
+
+  
 }
